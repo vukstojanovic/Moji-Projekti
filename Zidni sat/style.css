@@ -1,0 +1,199 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(rgb(106, 168, 226), white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.okvir {
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 50%;
+    min-width: 600px;
+    min-height: 600px;
+    position: relative;
+    z-index: 0;
+}
+
+.centar {
+    position: absolute;
+    border: 10px solid red;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.kazaljke {
+    position: absolute;
+    width: 5px;
+    left: 50%;
+    height: 50%;
+    /* background-color: yellow; */
+    transform: translateX(-50%);
+}
+
+.sekunde {
+    width: 5px;
+    background-color: red;
+    height: 96%;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+    z-index: 13;
+}
+
+.minuti {
+    width: 5px;
+    background-color: black;
+    height: 94%;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(45deg);
+    transform-origin: bottom;
+    z-index: 12;
+}
+
+.sati {
+    width: 5px;
+    background-color: black;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(90deg);
+    transform-origin: bottom;
+    z-index: 11;
+}
+
+/* .numbers {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: yellow;
+    width: 20px;
+} */
+
+.number {
+    /* background-color: yellow; */
+    position: absolute;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    min-width: 595px;
+    min-height: 595px;
+    z-index: 1;
+}
+
+.one {
+    transform: rotate(30deg);
+}
+
+.one span {
+    position: absolute;
+    transform: rotate(-30deg);
+}
+
+.two {
+    transform: rotate(60deg);
+}
+
+.two span {
+    position: absolute;
+    transform: rotate(-60deg);
+}
+
+.three {
+    transform: rotate(90deg);
+}
+
+.three span {
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+.four {
+    transform: rotate(120deg);
+}
+
+.four span {
+    position: absolute;
+    transform: rotate(-120deg);
+}
+
+.five {
+    transform: rotate(150deg);
+}
+
+.five span {
+    position: absolute;
+    transform: rotate(-150deg);
+}
+
+.six {
+    transform: rotate(180deg);
+}
+
+.six span {
+    position: absolute;
+    transform: rotate(-180deg);
+}
+
+.seven {
+    transform: rotate(210deg);
+}
+
+.seven span {
+    position: absolute;
+    transform: rotate(-210deg);
+}
+
+.eight {
+    transform: rotate(240deg);
+}
+
+.eight span {
+    position: absolute;
+    transform: rotate(-240deg);
+}
+
+.nine {
+    transform: rotate(270deg);
+}
+
+.nine span {
+    position: absolute;
+    transform: rotate(-270deg);
+}
+
+.ten {
+    transform: rotate(300deg);
+}
+
+.ten span {
+    position: absolute;
+    transform: rotate(-300deg);
+}
+
+.eleven {
+    transform: rotate(330deg);
+}
+
+.eleven span {
+    position: absolute;
+    transform: rotate(-330deg);
+}
