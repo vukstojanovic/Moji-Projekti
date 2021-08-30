@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="icons.js"></script>
+</head>
+<body>
+    <div class="top">
+        <p class="heading">Available Budget in <span id="month-year">%Month%:</span></p>
+        <p class="budget" id="totalBudget">0</p>
+        <div class="totalIncomeContainer">
+            <span>INCOME</span>
+            <span id="totalIncome"><span class="digit">0</span><span class="percentage">&nbsp;</span></span>
+        </div>
+        <div class="totalExpensesContainer">
+            <span>EXPENSES</span>
+            <span id="totalExpenses"><span class="digit">0</span><span class="percentage">-</span></span>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="inputs">
+            <select name="type" id="plusMinus" class="greenBorder">
+                <option value="inc">+</option>
+                <option value="exp">-</option>
+            </select>
+            <input type="text" placeholder="Add description" id="description" class="greenBorder">
+            <input type="number" placeholder="Value" id="value" class="greenBorder">
+            <button id="btn"><i class="far fa-check-circle greenBtn"></i></button>
+        </div>
+        <div class="elements">
+            <div class="income">
+                <h4>INCOME</h4>
+                <ul>
+                    <!-- <li><span class="name">salary</span><span class="number-container"><span class="num">45000</span><span class="iks"><i class="far fa-times-circle"></i></span></span></li> -->
+                </ul>
+            </div>
+            <div class="expenses">
+                <h4>EXPENSES</h4>
+                <ul>
+                    <!-- <li><span class="name">salary</span><span class="number-container"><span class="num">3000</span><span class="percentage">-</span><span class="iks"><i class="far fa-times-circle"></i></span></span></li>
+                    <li>food 3600</li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

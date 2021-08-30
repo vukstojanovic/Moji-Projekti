@@ -1,0 +1,301 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* top */
+
+.top {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('slike/back.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.top .heading {
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.top .budget {
+    padding: 15px;
+    font-size: 45px;
+    color: white;
+}
+
+.totalIncomeContainer, .totalExpensesContainer {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    width: 22%;
+    margin-bottom: 10px;
+}
+
+.totalIncomeContainer {
+    background-color: #28B9B5;
+}
+
+.totalExpensesContainer {
+    background-color: #FF5049;
+}
+
+#totalIncome, #totalExpenses {
+    color: white;
+}
+
+#totalExpenses .percentage {
+    padding: 2px 5px;
+    background-color: #f58783;
+    border-radius: 3px;
+    margin-left: 4px;
+}
+
+#totalIncome .percentage {
+    opacity: 0;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: 4px;
+}
+
+/* bottom */
+
+.bottom {
+    min-width: 60vh;
+}
+
+/* input segment */
+
+.inputs {
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #d3d0d0;
+}
+
+.inputs input {
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+    border: 1px solid #d3d0d0;
+    border-radius: 3px;
+}
+
+.inputs select {
+    padding: 10px 18px 10px 0px;
+    font-size: 18px;
+    margin-right: 10px;
+    border: 1px solid #d3d0d0;
+}
+
+.inputs #description {
+    width: 20%;
+}
+
+.inputs #value {
+    width: 5%;
+}
+
+.greenBorder {
+    outline-color: #28B9B5;
+}
+
+.redBorder {
+    outline-color: #FF5049;
+}
+
+.inputs button {
+    width: 2%;
+    border-radius: 50%;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.inputs button .far {
+    font-size: 30px;
+}
+
+.greenBtn {
+    color: #28B9B5;
+}
+
+.redBtn {
+    color: #FF5049;
+}
+
+
+/* elements */
+
+.elements {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.income, .expenses {
+    width: 40%;
+    padding-top: 60px;
+    letter-spacing: 2px;
+}
+
+.income h4 {
+    color: #28B9B5;
+}
+
+.expenses h4 {
+    color:#FF5049
+}
+
+.income ul, .expenses ul {
+    list-style-type: none;
+    padding-top: 20px;
+    color: gray;
+}
+
+.income {
+    padding-right: 30px;
+}
+
+.expenses {
+    padding-left: 30px;
+}
+
+.income ul li, .expenses ul li {
+    padding: 15px;
+    border-top: 1px solid #d3d0d0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.income ul li:last-child, .expenses ul li:last-child {
+    border-bottom: 1px solid #d3d0d0;
+}
+
+.income .number-container {
+    color: #28B9B5;
+}
+
+.expenses .number-container {
+    color:#FF5049
+}
+
+.name {
+    text-align: left;
+}
+
+.number {
+    text-align: right;
+}
+
+#totalIncome, #totalExpenses {
+    padding-right: 0px;
+}
+
+.iks {
+    margin-left: 15px;
+    display: none;
+    transition: all ease-in-out 0.5s;
+}
+
+.iks .far {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+li:hover .iks  {
+    display: inline;
+}
+
+.expenses .percentage {
+    padding: 2px 5px;
+    background-color: #f58783;
+    border-radius: 3px;
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 1360px) {
+
+    .totalIncomeContainer, .totalExpensesContainer {
+        width: 30%;
+    }
+
+    .inputs #value {
+        width: 12%;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .totalIncomeContainer, .totalExpensesContainer {
+        width: 60%;
+    }
+
+    .elements {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .income, .expenses {
+        padding-top: 60px;
+        letter-spacing: 2px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .expenses {
+        padding-left: 0px;
+    }
+
+    .income {
+        padding-right: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+
+    .totalIncomeContainer, .totalExpensesContainer {
+        width: 60%;
+    }
+
+    .income ul li, .expenses ul li {
+        overflow: hidden;
+    }
+
+    .inputs {
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+
+    .inputs #description, .inputs #value {
+        display: block;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .inputs #btn, .inputs #plusMinus {
+        display: block;
+        width: 15%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .inputs #plusMinus {
+        width: 20%;
+    }
+    
+}
+
